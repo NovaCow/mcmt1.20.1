@@ -8,5 +8,5 @@ Expect bugs, crashes and more!!
 
 # Credits:
 This mod is a direct fork of [MCMT](https://github.com/himekifee/MCMTFabric), please go and thank them for thier hard work!
-They have made Minecraft servers a lot more performant for no cost at all!
+They have made Minecraft servers a lot more performant for no cost at all!  
 If you like my work, please donate to the MCMT team! You can do so in their GitHub page!
