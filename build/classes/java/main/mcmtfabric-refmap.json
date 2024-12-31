@@ -1,0 +1,140 @@
+{
+  "mappings": {
+    "net/himeki/mcmtfabric/mixin/ChunkHolderMixin": {
+      "<init>": "Lnet/minecraft/class_3193;<init>(Lnet/minecraft/class_1923;ILnet/minecraft/class_5539;Lnet/minecraft/class_3568;Lnet/minecraft/class_3193$class_3896;Lnet/minecraft/class_3193$class_3897;)V",
+      "Lnet/minecraft/server/world/ChunkHolder;blockUpdatesBySection:[Lit/unimi/dsi/fastutil/shorts/ShortSet;": "Lnet/minecraft/class_3193;field_25804:[Lit/unimi/dsi/fastutil/shorts/ShortSet;",
+      "markForBlockUpdate": "Lnet/minecraft/class_3193;method_14002(Lnet/minecraft/class_2338;)V"
+    },
+    "net/himeki/mcmtfabric/mixin/EntityIndexMixin": {
+      "<init>": "Lnet/minecraft/class_5570;<init>()V"
+    },
+    "net/himeki/mcmtfabric/mixin/EntityListMixin": {
+      "ensureSafe": "Lnet/minecraft/class_5574;method_31789()V"
+    },
+    "net/himeki/mcmtfabric/mixin/ItemEntityMixin": {
+      "tryMerge()V": "Lnet/minecraft/class_1542;method_6973()V"
+    },
+    "net/himeki/mcmtfabric/mixin/LevelPropagatorMixin": {
+      "<init>": "Lnet/minecraft/class_3554;<init>(III)V",
+      "Lnet/minecraft/world/chunk/light/LevelPropagator;pendingUpdates:Lit/unimi/dsi/fastutil/longs/Long2ByteMap;": "Lnet/minecraft/class_3554;field_15784:Lit/unimi/dsi/fastutil/longs/Long2ByteMap;"
+    },
+    "net/himeki/mcmtfabric/mixin/MinecraftServerMixin": {
+      "Lnet/minecraft/server/MinecraftServer;isOnThread()Z": "Lnet/minecraft/server/MinecraftServer;method_18854()Z",
+      "Lnet/minecraft/server/world/ServerChunkManager;getTotalChunksLoadedCount()I": "Lnet/minecraft/class_3215;method_17301()I",
+      "Lnet/minecraft/server/world/ServerWorld;tick(Ljava/util/function/BooleanSupplier;)V": "Lnet/minecraft/class_3218;method_18765(Ljava/util/function/BooleanSupplier;)V",
+      "Lnet/minecraft/util/profiler/Profiler;swap(Ljava/lang/String;)V": "Lnet/minecraft/class_3695;method_15405(Ljava/lang/String;)V",
+      "prepareStartRegion": "Lnet/minecraft/server/MinecraftServer;method_3774(Lnet/minecraft/class_3949;)V",
+      "reloadResources": "Lnet/minecraft/server/MinecraftServer;method_29439(Ljava/util/Collection;)Ljava/util/concurrent/CompletableFuture;",
+      "tickWorlds": "Lnet/minecraft/server/MinecraftServer;method_3813(Ljava/util/function/BooleanSupplier;)V"
+    },
+    "net/himeki/mcmtfabric/mixin/PendingUpdateQueueMixin": {
+      "<init>": "Lnet/minecraft/class_8257;<init>(II)V",
+      "Lnet/minecraft/world/chunk/light/PendingUpdateQueue;pendingIdUpdatesByLevel:[Lit/unimi/dsi/fastutil/longs/LongLinkedOpenHashSet;": "Lnet/minecraft/class_8257;field_43400:[Lit/unimi/dsi/fastutil/longs/LongLinkedOpenHashSet;"
+    },
+    "net/himeki/mcmtfabric/mixin/ServerChunkManagerMixin": {
+      "Lnet/minecraft/server/world/ServerChunkManager$MainThreadExecutor;runTasks(Ljava/util/function/BooleanSupplier;)V": "Lnet/minecraft/class_3215$class_4212;method_18857(Ljava/util/function/BooleanSupplier;)V",
+      "Lnet/minecraft/server/world/ServerChunkManager;serverThread:Ljava/lang/Thread;": "Lnet/minecraft/class_3215;field_17253:Ljava/lang/Thread;",
+      "Lnet/minecraft/server/world/ServerWorld;tickChunk(Lnet/minecraft/world/chunk/WorldChunk;I)V": "Lnet/minecraft/class_3218;method_18203(Lnet/minecraft/class_2818;I)V",
+      "Lnet/minecraft/util/profiler/Profiler;visit(Ljava/lang/String;)V": "Lnet/minecraft/class_3695;method_39278(Ljava/lang/String;)V",
+      "getChunk(IILnet/minecraft/world/chunk/ChunkStatus;Z)Lnet/minecraft/world/chunk/Chunk;": "Lnet/minecraft/class_3215;method_12121(IILnet/minecraft/class_2806;Z)Lnet/minecraft/class_2791;",
+      "getWorldChunk": "Lnet/minecraft/class_3215;method_21730(II)Lnet/minecraft/class_2818;",
+      "tickChunks": "Lnet/minecraft/class_3215;method_14161()V"
+    },
+    "net/himeki/mcmtfabric/mixin/ServerWorldMixin": {
+      "(Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/world/level/storage/LevelStorage$Session;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/structure/StructureTemplateManager;Ljava/util/concurrent/Executor;Lnet/minecraft/world/gen/chunk/ChunkGenerator;IIZLnet/minecraft/server/WorldGenerationProgressListener;Lnet/minecraft/world/chunk/ChunkStatusChangeListener;Ljava/util/function/Supplier;)Lnet/minecraft/server/world/ServerChunkManager;": "(Lnet/minecraft/class_3218;Lnet/minecraft/class_32$class_5143;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_3485;Ljava/util/concurrent/Executor;Lnet/minecraft/class_2794;IIZLnet/minecraft/class_3949;Lnet/minecraft/class_5567;Ljava/util/function/Supplier;)Lnet/minecraft/class_3215;",
+      "<init>": "Lnet/minecraft/class_3218;<init>(Lnet/minecraft/server/MinecraftServer;Ljava/util/concurrent/Executor;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_5268;Lnet/minecraft/class_5321;Lnet/minecraft/class_5363;Lnet/minecraft/class_3949;ZJLjava/util/List;ZLnet/minecraft/class_8565;)V",
+      "Lnet/minecraft/server/world/ServerWorld;duringListenerUpdate:Z": "Lnet/minecraft/class_3218;field_36317:Z",
+      "Lnet/minecraft/server/world/ServerWorld;tickEntity(Ljava/util/function/Consumer;Lnet/minecraft/entity/Entity;)V": "Lnet/minecraft/class_3218;method_18472(Ljava/util/function/Consumer;Lnet/minecraft/class_1297;)V",
+      "Lnet/minecraft/util/profiler/Profiler;push(Ljava/lang/String;)V": "Lnet/minecraft/class_3695;method_15396(Ljava/lang/String;)V",
+      "Lnet/minecraft/util/profiler/Profiler;swap(Ljava/lang/String;)V": "Lnet/minecraft/class_3695;method_15405(Ljava/lang/String;)V",
+      "addSyncedBlockEvent": "Lnet/minecraft/class_3218;method_8427(Lnet/minecraft/class_2338;Lnet/minecraft/class_2248;II)V",
+      "clearUpdatesInArea": "Lnet/minecraft/class_3218;method_23658(Lnet/minecraft/class_3341;)V",
+      "method_31420": "Lnet/minecraft/class_3218;method_31420(Lnet/minecraft/class_3695;Lnet/minecraft/class_1297;)V",
+      "processSyncedBlockEvents": "Lnet/minecraft/class_3218;method_14192()V",
+      "tick": "Lnet/minecraft/class_3218;method_18765(Ljava/util/function/BooleanSupplier;)V",
+      "updateListeners": "Lnet/minecraft/class_3218;method_8413(Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;I)V"
+    },
+    "net/himeki/mcmtfabric/mixin/TypeFilterableListMixin": {
+      "method_15217": "Lnet/minecraft/class_3509;method_15217(Ljava/lang/Class;)Ljava/util/List;"
+    },
+    "net/himeki/mcmtfabric/mixin/UtilMixin": {
+      "method_28123": "Lnet/minecraft/class_156;method_28123(Ljava/lang/String;Ljava/util/concurrent/ForkJoinPool;)Ljava/util/concurrent/ForkJoinWorkerThread;"
+    },
+    "net/himeki/mcmtfabric/mixin/WorldMixin": {
+      "Lnet/minecraft/util/profiler/Profiler;pop()V": "Lnet/minecraft/class_3695;method_15407()V",
+      "Lnet/minecraft/world/chunk/BlockEntityTickInvoker;tick()V": "Lnet/minecraft/class_5562;method_31703()V",
+      "getBlockEntity": "Lnet/minecraft/class_1937;method_8321(Lnet/minecraft/class_2338;)Lnet/minecraft/class_2586;",
+      "tickBlockEntities": "Lnet/minecraft/class_1937;method_18471()V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "net/himeki/mcmtfabric/mixin/ChunkHolderMixin": {
+        "<init>": "Lnet/minecraft/class_3193;<init>(Lnet/minecraft/class_1923;ILnet/minecraft/class_5539;Lnet/minecraft/class_3568;Lnet/minecraft/class_3193$class_3896;Lnet/minecraft/class_3193$class_3897;)V",
+        "Lnet/minecraft/server/world/ChunkHolder;blockUpdatesBySection:[Lit/unimi/dsi/fastutil/shorts/ShortSet;": "Lnet/minecraft/class_3193;field_25804:[Lit/unimi/dsi/fastutil/shorts/ShortSet;",
+        "markForBlockUpdate": "Lnet/minecraft/class_3193;method_14002(Lnet/minecraft/class_2338;)V"
+      },
+      "net/himeki/mcmtfabric/mixin/EntityIndexMixin": {
+        "<init>": "Lnet/minecraft/class_5570;<init>()V"
+      },
+      "net/himeki/mcmtfabric/mixin/EntityListMixin": {
+        "ensureSafe": "Lnet/minecraft/class_5574;method_31789()V"
+      },
+      "net/himeki/mcmtfabric/mixin/ItemEntityMixin": {
+        "tryMerge()V": "Lnet/minecraft/class_1542;method_6973()V"
+      },
+      "net/himeki/mcmtfabric/mixin/LevelPropagatorMixin": {
+        "<init>": "Lnet/minecraft/class_3554;<init>(III)V",
+        "Lnet/minecraft/world/chunk/light/LevelPropagator;pendingUpdates:Lit/unimi/dsi/fastutil/longs/Long2ByteMap;": "Lnet/minecraft/class_3554;field_15784:Lit/unimi/dsi/fastutil/longs/Long2ByteMap;"
+      },
+      "net/himeki/mcmtfabric/mixin/MinecraftServerMixin": {
+        "Lnet/minecraft/server/MinecraftServer;isOnThread()Z": "Lnet/minecraft/server/MinecraftServer;method_18854()Z",
+        "Lnet/minecraft/server/world/ServerChunkManager;getTotalChunksLoadedCount()I": "Lnet/minecraft/class_3215;method_17301()I",
+        "Lnet/minecraft/server/world/ServerWorld;tick(Ljava/util/function/BooleanSupplier;)V": "Lnet/minecraft/class_3218;method_18765(Ljava/util/function/BooleanSupplier;)V",
+        "Lnet/minecraft/util/profiler/Profiler;swap(Ljava/lang/String;)V": "Lnet/minecraft/class_3695;method_15405(Ljava/lang/String;)V",
+        "prepareStartRegion": "Lnet/minecraft/server/MinecraftServer;method_3774(Lnet/minecraft/class_3949;)V",
+        "reloadResources": "Lnet/minecraft/server/MinecraftServer;method_29439(Ljava/util/Collection;)Ljava/util/concurrent/CompletableFuture;",
+        "tickWorlds": "Lnet/minecraft/server/MinecraftServer;method_3813(Ljava/util/function/BooleanSupplier;)V"
+      },
+      "net/himeki/mcmtfabric/mixin/PendingUpdateQueueMixin": {
+        "<init>": "Lnet/minecraft/class_8257;<init>(II)V",
+        "Lnet/minecraft/world/chunk/light/PendingUpdateQueue;pendingIdUpdatesByLevel:[Lit/unimi/dsi/fastutil/longs/LongLinkedOpenHashSet;": "Lnet/minecraft/class_8257;field_43400:[Lit/unimi/dsi/fastutil/longs/LongLinkedOpenHashSet;"
+      },
+      "net/himeki/mcmtfabric/mixin/ServerChunkManagerMixin": {
+        "Lnet/minecraft/server/world/ServerChunkManager$MainThreadExecutor;runTasks(Ljava/util/function/BooleanSupplier;)V": "Lnet/minecraft/class_3215$class_4212;method_18857(Ljava/util/function/BooleanSupplier;)V",
+        "Lnet/minecraft/server/world/ServerChunkManager;serverThread:Ljava/lang/Thread;": "Lnet/minecraft/class_3215;field_17253:Ljava/lang/Thread;",
+        "Lnet/minecraft/server/world/ServerWorld;tickChunk(Lnet/minecraft/world/chunk/WorldChunk;I)V": "Lnet/minecraft/class_3218;method_18203(Lnet/minecraft/class_2818;I)V",
+        "Lnet/minecraft/util/profiler/Profiler;visit(Ljava/lang/String;)V": "Lnet/minecraft/class_3695;method_39278(Ljava/lang/String;)V",
+        "getChunk(IILnet/minecraft/world/chunk/ChunkStatus;Z)Lnet/minecraft/world/chunk/Chunk;": "Lnet/minecraft/class_3215;method_12121(IILnet/minecraft/class_2806;Z)Lnet/minecraft/class_2791;",
+        "getWorldChunk": "Lnet/minecraft/class_3215;method_21730(II)Lnet/minecraft/class_2818;",
+        "tickChunks": "Lnet/minecraft/class_3215;method_14161()V"
+      },
+      "net/himeki/mcmtfabric/mixin/ServerWorldMixin": {
+        "(Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/world/level/storage/LevelStorage$Session;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/structure/StructureTemplateManager;Ljava/util/concurrent/Executor;Lnet/minecraft/world/gen/chunk/ChunkGenerator;IIZLnet/minecraft/server/WorldGenerationProgressListener;Lnet/minecraft/world/chunk/ChunkStatusChangeListener;Ljava/util/function/Supplier;)Lnet/minecraft/server/world/ServerChunkManager;": "(Lnet/minecraft/class_3218;Lnet/minecraft/class_32$class_5143;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_3485;Ljava/util/concurrent/Executor;Lnet/minecraft/class_2794;IIZLnet/minecraft/class_3949;Lnet/minecraft/class_5567;Ljava/util/function/Supplier;)Lnet/minecraft/class_3215;",
+        "<init>": "Lnet/minecraft/class_3218;<init>(Lnet/minecraft/server/MinecraftServer;Ljava/util/concurrent/Executor;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_5268;Lnet/minecraft/class_5321;Lnet/minecraft/class_5363;Lnet/minecraft/class_3949;ZJLjava/util/List;ZLnet/minecraft/class_8565;)V",
+        "Lnet/minecraft/server/world/ServerWorld;duringListenerUpdate:Z": "Lnet/minecraft/class_3218;field_36317:Z",
+        "Lnet/minecraft/server/world/ServerWorld;tickEntity(Ljava/util/function/Consumer;Lnet/minecraft/entity/Entity;)V": "Lnet/minecraft/class_3218;method_18472(Ljava/util/function/Consumer;Lnet/minecraft/class_1297;)V",
+        "Lnet/minecraft/util/profiler/Profiler;push(Ljava/lang/String;)V": "Lnet/minecraft/class_3695;method_15396(Ljava/lang/String;)V",
+        "Lnet/minecraft/util/profiler/Profiler;swap(Ljava/lang/String;)V": "Lnet/minecraft/class_3695;method_15405(Ljava/lang/String;)V",
+        "addSyncedBlockEvent": "Lnet/minecraft/class_3218;method_8427(Lnet/minecraft/class_2338;Lnet/minecraft/class_2248;II)V",
+        "clearUpdatesInArea": "Lnet/minecraft/class_3218;method_23658(Lnet/minecraft/class_3341;)V",
+        "method_31420": "Lnet/minecraft/class_3218;method_31420(Lnet/minecraft/class_3695;Lnet/minecraft/class_1297;)V",
+        "processSyncedBlockEvents": "Lnet/minecraft/class_3218;method_14192()V",
+        "tick": "Lnet/minecraft/class_3218;method_18765(Ljava/util/function/BooleanSupplier;)V",
+        "updateListeners": "Lnet/minecraft/class_3218;method_8413(Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;I)V"
+      },
+      "net/himeki/mcmtfabric/mixin/TypeFilterableListMixin": {
+        "method_15217": "Lnet/minecraft/class_3509;method_15217(Ljava/lang/Class;)Ljava/util/List;"
+      },
+      "net/himeki/mcmtfabric/mixin/UtilMixin": {
+        "method_28123": "Lnet/minecraft/class_156;method_28123(Ljava/lang/String;Ljava/util/concurrent/ForkJoinPool;)Ljava/util/concurrent/ForkJoinWorkerThread;"
+      },
+      "net/himeki/mcmtfabric/mixin/WorldMixin": {
+        "Lnet/minecraft/util/profiler/Profiler;pop()V": "Lnet/minecraft/class_3695;method_15407()V",
+        "Lnet/minecraft/world/chunk/BlockEntityTickInvoker;tick()V": "Lnet/minecraft/class_5562;method_31703()V",
+        "getBlockEntity": "Lnet/minecraft/class_1937;method_8321(Lnet/minecraft/class_2338;)Lnet/minecraft/class_2586;",
+        "tickBlockEntities": "Lnet/minecraft/class_1937;method_18471()V"
+      }
+    }
+  }
+}
