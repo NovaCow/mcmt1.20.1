@@ -7,6 +7,6 @@ Expect bugs, crashes and more!!
 **DON'T USE IN PRODUCTION YET!** Use only on small scale servers (like those with friends!)
 
 # Credits:
-This mod is a direct fork of [MCMT](https://github.com/himekifee/MCMTFabric), please go and thank them for thier hard work!
+This mod is a direct fork of [MCMT](https://github.com/himekifee/MCMTFabric), please go and thank them for their hard work!
 They have made Minecraft servers a lot more performant for no cost at all!  
 If you like my work, please donate to the MCMT team! You can do so in their GitHub page!
