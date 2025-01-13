@@ -10,7 +10,9 @@ Some mods aren't compatible with MCMT, a quick list are:
   * VMP (Very Many Players)
   * Lithium
   * CarpetFixes
-  * async
+  * async  
+
+
 The popular mod Create (and its addons) cause issues with the mod. To allow it to work with Create installed, you need to enter the config of MCMT and disable entity ticking (disableEntity needs to be true).
 
 # WARNING!
